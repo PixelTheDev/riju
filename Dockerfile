@@ -4,6 +4,8 @@ FROM ubuntu:rolling
 # prod, it's not actually read by anything.
 ARG UID
 
+RUN sudo apt install gpgv1 gpgv2
+
 COPY scripts/my_init /usr/bin/my_init
 
 COPY scripts/docker-install-phase0.bash /tmp/
