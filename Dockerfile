@@ -1,4 +1,4 @@
-FROM ubuntu:rolling
+FROM ubuntu:latest
 
 # This is just here so we can reuse the Docker cache between dev and
 # prod, it's not actually read by anything.
