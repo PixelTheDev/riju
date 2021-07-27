@@ -4,7 +4,7 @@ FROM ubuntu:latest
 # prod, it's not actually read by anything.
 ARG UID
 
-RUN apt install gpgv1 gpgv2 sudo
+RUN apt install gpgv
 
 COPY scripts/my_init /usr/bin/my_init
 
